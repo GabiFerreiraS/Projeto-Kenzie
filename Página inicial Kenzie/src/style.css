@@ -1,0 +1,299 @@
+/* RESET */
+/* Elimina uma forma de os elementos se sobreporem uns aos outros */
+body, h1, h2, h3, p, button, ul, li, footer { 
+  margin: 0;
+  padding: 0;
+  border: none; 
+  box-sizing: border-box;
+}
+
+body { 
+    color: white;
+    font-family: "JetBrains Mono", sans-serif; 
+}
+
+.secao-destaque, .secao-calendario { 
+  background-color: #00005f;
+}
+
+.secao-conteudo, #rodape { 
+  background-color: #00002a;
+}
+
+.texto-superior-principal { 
+    font-size: 22px;
+    font-weight: 800;
+}
+
+/* Font-Weight: Aumentar a grossura da palavra */
+
+.titulo-principal { 
+  font-size: 70px;
+  font-weight: 900px;
+  padding: 32px 0;
+}
+
+/*line-height: espaçamento do paragrafo */
+
+.paragrafo-padrao { 
+  font-family: "Montserrat", sans-serif; 
+  font-size: 18px; 
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+
+.texto-superior-secundario { 
+  font-size: 15px;
+}
+
+.titulo-secundario { 
+  font-size: 42px;
+  padding: 32px 0; 
+}
+
+.titulo-terciario { 
+  font-size: 31px;
+}
+
+.paragrafo-menor{ 
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  
+}
+
+/* fill: preencher */
+
+svg {
+  fill: white;
+}
+
+.secao-destaque, .secao-conteudo, .secao-calendario { 
+  padding: 80px;
+}
+
+.botao-chamada{ 
+    padding: 25px 50px; 
+    background-color: #00ffa5;
+    font-family: "JetBrains Mono", sans-serif; 
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* List-style: bolinha da li, display flex: um posicionamento em forma de caixa, gap: espaçamento entre os cartões*/
+
+.lista-cartoes { 
+  list-style: none; 
+  padding-bottom: 32px;
+  display: flex;
+  gap: 10px;
+}
+
+.cartao {
+  border: 1px solid gray; 
+  padding: 15px;
+  width: 100%;
+  display: flex; 
+  flex-direction: column;
+  gap: 15px;  
+}
+
+#rodape { 
+  padding: 32px 25px;  
+  border-top: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+
+
+.rodape-link {
+  color: #00002a;
+  text-decoration: none; 
+}
+
+.rodape-link:hover {
+  color: #fff;
+  text-decoration: underline;  
+}
+
+
+.box { 
+  width: 160px; 
+  height: 48px; 
+  display: flex; 
+  align-items: center; 
+  padding: 2px;
+  margin: 0.6rem; 
+  position: relative; 
+  overflow: hidden; 
+  cursor: pointer; 
+  transition: all .4s ease; 
+
+}
+
+.box:hover{
+  width: 140px; 
+  background: #1877f2; 
+  border-radius: 35px; 
+  box-shadow: 0 0 50px #1876f285;
+  
+}
+
+.box:nth-child(2):hover{
+  background: #c32aa3;
+  box-shadow: 0 0 50px #b315917c; 
+  
+}
+
+.box:nth-child(3):hover{
+  background: #DC143C;
+  box-shadow: 0 0 50px #800000; 
+  
+}
+
+.box a :nth-child(4):hover{
+  background: #1877f2;
+  box-shadow: 0 0 50px #1876f285; 
+}
+
+.navbar a { 
+  transform: translate(55px);
+  
+}
+
+.box .icon { 
+  position: absolute; 
+  width: 40px; 
+  height: 40px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  color: #fff; 
+  border-radius: 50%; 
+  margin-right: 10px; 
+  transition: all .4s ease; 
+}
+
+.instagram {
+  background-color: #c32aa3;
+}
+
+.facebook {
+  background-color: #1877f2;
+}
+
+.youtube { 
+  background-color: #800000;
+  
+}
+
+.linkedin { 
+  background-color: #1876f285
+  
+}
+
+.box:hover .icon { 
+  background: #fff; 
+  color: #3b3b3b;
+  box-shadow: 0 0 20px rgba(0,0,0,0.26);
+  
+}
+
+.titulo-redes-contatos {
+  color: #fff;
+  margin: 0 20px;
+  
+}
+
+
+.contatos {
+  display: flex; 
+  flex-direction: column; 
+  gap: 10px;
+}
+
+
+/* MODAL */
+
+.modal[open] {
+  background-color: #191c1f;
+  color: white;
+  border: 2px solid blue;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.8);
+  
+}
+
+
+.botao-inscricao {
+    padding: 10px 30px; 
+    background-color: #00ffa5;
+    font-family: "JetBrains Mono", sans-serif; 
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.cabecalho-modal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.botao-fechar-modal {
+  background-color: #343a40;
+  padding: 8px 12px;
+  color: #adb5bd;
+  cursor: pointer;
+  
+}
+
+.input-modal { 
+  padding: 14px 20px; 
+  border: 1px solid gray;
+  background-color: #191c1f;
+  font-family: "JetBrains Mono", sans-serif; 
+  color: white;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1068px){
+  .lista-cartoes {
+    flex-direction: column; 
+  }
+}
+
+@media (max-width: 580px){
+  .titulo-principal {
+    font-size: 45px; 
+  }
+  
+  #rodape {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .contatos {
+    gap: 16px;
+    
+  }
+  
+}
+
+
+
+
+
+
+
